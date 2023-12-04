@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+    --font-h1: clamp(4rem, 8vw, 10rem);
+    --font-h2: clamp(1rem, 7vw, 7rem);
+    --font-md: clamp(1rem, 4vw, 5rem);
+    --font-min: clamp(1.5rem, 1.2vw, 1.8rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+body {
+    width: 100%;
+    min-width: 100vh;
+    background-image: url("../img/fundo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Zeyada';
+    font-weight: 500;
+    
+}
+
+.container {
+    width: 97%;
+    overflow: hidden;
+}
+
+.ft-perfil {
+    text-align: center;
+}
+
+#ft-bio {
+    width: 350px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Nabla';
+    font-size: var(--font-h1);
+    text-shadow: 3px 2px 3px black, 0 0 0.3em rgb(27, 13, 13), 0 0 0.2em rgb(7, 4, 0);
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: var(--font-h2);
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: var(--font-md);
+    font-weight: bold;
+    display: flex;
+    padding-left: 1%;
+}
+
+h4 {
+    font-size: var(--font-md);
+}
+
+ol,
+ul {
+    text-align: left;
+    padding: 0% 7%;
+    font-size: var(--font-min);
+}
+
+.footer-one h4,
+h5 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    padding: 0% 1%;
+    font-size: var(--font-min);
+}
+
+.p1,
+.p2,
+.p3 {
+    text-align: justify;
+    position: absolute;
+    margin-left: 1%;
+    margin-right: 1%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 2s;
+
+
+}
+
+#trab:hover~.p1 {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 1;
+}
+
+#estudos:hover~.p1 {
+    margin-top: 1%;
+    margin-left: -30%;
+    margin-right: 10%;
+    opacity: 1;
+}
+
+#hobb:hover~.p1 {
+    margin-top: 1%;
+    margin-left: -60%;
+    margin-right: 10%;
+    opacity: 1;
+
+}
+
+#hobb:hover~.p2 {
+    margin-top: 9%;
+    margin-left: -60%;
+    margin-right: 10%;
+    opacity: 1;
+
+}
+
+#hobb:hover~.p3 {
+    margin-top: 26%;
+    margin-left: -60%;
+    margin-right: 10%;
+    opacity: 1;
+}
+
+#img-pessoa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+#tittle-one {
+    height: 290px;
+    margin-top: 2%;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+#subTittleOne {
+    text-align: left;
+    text-shadow: 3px 2px 3px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#textDivOne {
+    padding: 1%;
+    font-size: var(--font-md);
+}
+
+#img-pai {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    z-index: -1;
+    opacity: 0.4;
+    border-radius: 20px;
+}
+
+#div-pai {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 770px;
+    position: relative;
+    display: flex;
+}
+
+.job h3 {
+    border: 1px solid;
+    border-color: rgba(0, 255, 255, 0.205);
+    border-radius: 20px;
+    background-image: url("../img/divs1.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 15%;
+    padding-left: 1%;
+}
+
+#studies h3 {
+    border: 1px solid;
+    border-color: rgba(0, 255, 255, 0.205);
+    border-radius: 20px;
+    background-image: url("../img/divs2.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 15%;
+    padding-left: 1%;
+}
+
+#hobbies h3 {
+    border: 1px solid;
+    border-color: rgba(0, 255, 255, 0.205);
+    border-radius: 20px;
+    background-image: url("../img/div2.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 15%;
+    padding-left: 1%;
+}
+
+h3:hover~.p1,
+.p2,
+.p3 {
+    display: flexbox;
+    align-items: center;
+    padding: 2%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.568);
+    border: 1px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sub-tittle {
+    text-shadow: 3px 2px 3px black, 0 0 1em rgb(234, 238, 224), 0 0 0.2em rgb(234, 238, 224);
+}
+
+#img-musicas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+#musicals {
+    height: 450px;
+    margin-top: 2%;
+    position: relative;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: rgb(27, 213, 219);
+}
+
+a:hover {
+    color: #dad71e;
+}
+
+a:active {
+    color: blue;
+}
+
+.footer-one {
+    align-items: center;
+    background-image: url("../img/onePiece3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    border-radius: 20px;
+    font-size: var(--font-min);
+}
+
+@media(max-width:900px) {
+    #jar-supporting {
+        display: block;
+    }
+}
